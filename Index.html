@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge Encriptador de Texto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet"/><link rel="stylesheet" href="Styles/style.css" />
+</head> 
+<body>
+<header>
+<img src="./Assets/svg/Logo.svg" alt="logo">
+</header>
+    <main>
+      <form class="form__section">
+        <label for="mensaje" class="form__label">Texto a Encriptar/Desencriptar</label>
+        <textarea class="form__input" name="mensaje" id="" cols="30" rows="10"placeholder="Ingrese el texto aqui"></textarea>
+        <div class="btn__container"><div class="alert__msj"><img src="./Assets/svg/Vector.svg" alt="alert vector">
+            <span>Solo letras minusculas y sin acentos</span></div></div>
+        <div class="submit__container">
+            <input class="form__boton" type="submit" value="Encriptar">
+            <input class="form__boton form__boton--second" type="submit" value="Desencriptar">
+        </div>    
+        </form>  
+    <aside class="result">
+        <img src="./Assets/svg/Muñeco.png" alt="muñeco imagen" class="result__img">
+        <div class="loader hidden"></div>
+            <div class="result__container">
+                <h3 class="result__tittle">Ningun mensaje fue encontrado</h3>
+                <p class="result__text">Ingresa el texto que deseas encriptar o desencriptar</p>
+                <button class="result__btn form__boton form__boton--second hidden">Copiar</button>
+            </div>   
+    </aside>
+</main>
+<script src="./encriptador.js"></script>
+</body>
+<footer class="footer__copyrights">
+    <p>Developed by Abraham Morales Luna 24/08/2024</p>
+</footer>
+</html>
